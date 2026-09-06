@@ -185,7 +185,8 @@ const BOROUGH_NEIGHBOURHOODS = {
     };
 
     try {
-      const res = await fetch('http://localhost:8000/predict', {
+      const res = await fetch('https://nyc-airbnb-room-type-predictor-backend.onrender.com', {
+      // const res = await fetch('http://localhost:8000/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
